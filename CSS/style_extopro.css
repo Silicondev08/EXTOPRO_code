@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-image: url("../Images/Capture2.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+}
+.texte{
+    position: relative;
+    bottom: 390px;
+    width: 35%;
+    left: 80px;
+    font-size: larger;
+    margin-left: 30px;
+    animation: fadeIn 1s ease forwards;
+    opacity: 0;
+}
+.texte span {
+    color: rgb(45, 171, 221);
+}
+.noir{
+    height: 190px;
+    width: 14%;
+    border-radius: 50%;
+    background: black ;
+    color: white;
+    text-align: center;
+    position: relative;
+    left: 44%;
+    top: 40px;
+    animation: fadeIn 4s ease forwards;
+    opacity: 0;
+}
+.deuxième_conteneur{
+    height: 248px;
+    width: 19%;
+    border-radius: 50%;
+    position: relative;
+    bottom: 179px;
+    left: 41.4%;
+    animation: rotation 8.8s linear infinite;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 4s ease forwards;
+    -moz-animation: rotation 22.5s linear infinite;
+    -webkit-animation: rotation 22.5s linear infinite;
+    -o-animation: rotation 22.5s linear infinite;
+    animation: fadeIn 1s ease forwards;
+    animation: rotation 22.5s linear infinite;
+}
+.deuxième{
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    background: rgb(125, 135, 179);
+    transform: translateY(-50%);
+}
+.troisième_conteneur{
+    height: 248px;
+    width: 19%;
+    animation: fadeIn 1s ease forwards;
+    border-radius: 50%;
+    position: relative;
+    bottom: 427px;
+    left: 41.4%;
+    animation: rotation 8.8s linear infinite;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 4s ease forwards;
+    -moz-animation: rotation 22.5s linear infinite;
+    -webkit-animation: rotation 22.5s linear infinite;
+    -o-animation: rotation 22.5s linear infinite;
+    animation: rotation 22.5s linear infinite;
+}
+.troisième{
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    background: rgb(125, 135, 179);
+    transform: translateY(-50%);
+}
+h1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 40%;
+}
+nav{
+    float: right;
+    position: relative;
+    right: 10%;
+    bottom: 390px;
+    margin-bottom: 10PX;
+    margin-block: 20px;
+    padding-bottom: 17px;
+    animation: fadeIn 2s ease forwards;
+    opacity: 0;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    font-size: large;
+    transition: all 0.7s ease;
+}
+nav li:hover a {
+    background-color: rgba(211, 235, 229, 0.767);
+    transform: scale(1.02);
+    transition: transform 0.7s ease;
+    border-radius: 40px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 280px;
+    padding-left: 80px;
+    padding-right: 4px;
+}
+.delayed-image {
+    animation: fadeIn 3s ease forwards;
+    opacity: 0;
+}
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    max-width: calc(33.333% - 20px);
+}
+
+.gallery-item img {
+    width: 50%;
+    justify-content: space-around;
+    height: 400px;
+    border: 2px solid #ccc;
+    transition: transform 0.4s;
+    border-radius: 10%;
+    position: relative;
+    left: 20px;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.2);
+}
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% {opacity: 1; transform: translateY(0); } 
+}
+@media screen and (max-width: 780px) {
+    body {
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 12vh;
+        position: relative;
+        top: 70px;
+    }
+    .noir{
+        height: 100px;
+        width: 20%;
+        font-size: 8px;
+        position: relative;
+        left: 41%;
+        top: 20px;
+    }
+    nav {
+        position: relative;
+        left: 5%;
+        bottom: 200px;
+    }
+    nav a {
+        font-size: 12px;
+        color: black;
+    }
+    .texte {
+        font-size: 12px;
+        position: relative;
+        left: 1px;
+        color: black;
+        bottom: 200px;
+    }
+    .gallery-item{
+        position: relative;
+        right: 70px;
+    }
+    .gallery-item img {
+        width: 50%;
+        justify-content: space-around;
+        height: 200px;
+        border: 2px solid #ccc;
+        transition: transform 0.4s;
+        border-radius: 10%;
+        position: relative;
+        top: 130px;
+    }
+    .troisième_conteneur{
+        height: 140px;
+        width: 33%;
+        border-radius: 50%;
+        position: relative;
+        bottom: 242px;
+        left: 34%;
+        animation: rotation 8.8s linear infinite;
+        border-radius: 50%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        animation: fadeIn 4s ease forwards;
+        -moz-animation: rotation 22.5s linear infinite;
+        -webkit-animation: rotation 22.5s linear infinite;
+        -o-animation: rotation 22.5s linear infinite;
+        animation: rotation 22.5s linear infinite;
+    }
+    .deuxième_conteneur{
+        height: 140px;
+        width: 33%;
+        border-radius: 50%;
+        position: relative;
+        bottom: 100px;
+        left: 34%;
+        animation: rotation 8.8s linear infinite;
+        border-radius: 50%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        animation: fadeIn 4s ease forwards;
+        -moz-animation: rotation 22.5s linear infinite;
+        -webkit-animation: rotation 22.5s linear infinite;
+        -o-animation: rotation 22.5s linear infinite;
+        animation: rotation 22.5s linear infinite;
+    }
+}
+@keyframes rotation {
+    to {
+        rotate: 1turn;
+    }
+}
